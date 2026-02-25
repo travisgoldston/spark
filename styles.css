@@ -140,6 +140,10 @@ ul {
   padding: 18px 20px;
 }
 
+.logo {
+  color: #e3e6ff;
+}
+
 .site-header.scrolled .header-inner {
   padding-block: 10px;
 }
