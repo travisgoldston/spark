@@ -140,6 +140,10 @@ if (faqRoot) {
     const answer = item.querySelector('.faq-answer');
     if (!answer) return;
 
+    // Ensure all answers start collapsed
+    answer.style.maxHeight = '0';
+    item.classList.remove('is-open');
+
     const setMaxHeight = (open) => {
       if (open) {
         answer.style.maxHeight = `${answer.scrollHeight}px`;
