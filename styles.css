@@ -1033,14 +1033,14 @@ input[type='range'] {
 }
 
 .faq-answer {
-  padding: 0 18px 14px;
+  padding: 0 18px 0;
   max-height: 0;
   overflow: hidden;
   transition: max-height var(--transition-med), padding-top var(--transition-med);
 }
 
 .faq-item.is-open .faq-answer {
-  padding-top: 4px;
+  padding: 4px 18px 14px;
 }
 
 /* FINAL CTA & FORM */
