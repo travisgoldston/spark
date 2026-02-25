@@ -809,7 +809,7 @@ ul {
 }
 
 .before-after-side--after {
-  color: #f9fbff;
+  color: #0a0a23;
 }
 
 .before-after-label {
@@ -818,6 +818,10 @@ ul {
   letter-spacing: 0.16em;
   margin-bottom: 10px;
   color: #9fa4ff;
+}
+
+.before-after-overlay .before-after-label {
+  color: #0d0d2b;
 }
 
 .before-after-overlay {
