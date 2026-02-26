@@ -1,3 +1,23 @@
+// Mobile nav toggle
+const navToggle = document.querySelector('[data-nav-toggle]');
+const navDrawer = document.getElementById('nav-drawer');
+if (navToggle && navDrawer) {
+  navToggle.addEventListener('click', () => {
+    const isOpen = navDrawer.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', isOpen);
+    navToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    navDrawer.setAttribute('aria-hidden', !isOpen);
+  });
+  navDrawer.querySelectorAll('.nav-drawer-link, .nav-drawer-cta').forEach((link) => {
+    link.addEventListener('click', () => {
+      navDrawer.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.setAttribute('aria-label', 'Open menu');
+      navDrawer.setAttribute('aria-hidden', 'true');
+    });
+  });
+}
+
 // Sticky header
 const headerEl = document.querySelector('[data-header]');
 const heroEl = document.querySelector('#hero');
