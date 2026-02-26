@@ -742,6 +742,21 @@ ul {
   margin-bottom: 48px;
 }
 
+.process-list {
+  list-style: decimal;
+  padding-left: 1.5em;
+  margin: 24px 0 0;
+  max-width: 560px;
+}
+
+.process-list li {
+  margin-bottom: 20px;
+}
+
+.process-list li:last-child {
+  margin-bottom: 0;
+}
+
 /* TIMELINE */
 
 .timeline {
