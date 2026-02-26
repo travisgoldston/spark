@@ -84,6 +84,11 @@ a {
   margin: 16px 0 20px;
 }
 
+.section h3 {
+  font-size: 1.25rem;
+  margin: 24px 0 10px;
+}
+
 .section-intro,
 .section-summary {
   max-width: 600px;
@@ -93,6 +98,37 @@ a {
 .section-dark .section-intro,
 .section-dark .section-summary {
   color: #c0c7f2;
+}
+
+/* Inner page header (no transparent overlay) */
+body.page-inner .site-header {
+  background: rgba(10, 10, 35, 0.96);
+  box-shadow: 0 12px 40px rgba(6, 10, 50, 0.52);
+}
+
+body.page-inner .header-inner {
+  padding-block: 10px;
+}
+
+.page-hero {
+  padding-top: 140px;
+  padding-bottom: 56px;
+  background: radial-gradient(circle at top left, rgba(63, 99, 255, 0.14), transparent 55%);
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.page-hero h1 {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin: 0 0 12px;
+}
+
+.page-hero .lead {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  max-width: 640px;
+  margin: 0;
 }
 
 .eyebrow {
@@ -739,18 +775,20 @@ ul {
 
 .chat-mockup {
   background: rgba(4, 6, 26, 0.92);
-  border-radius: 22px;
-  padding: 14px 14px 16px;
+  border-radius: 24px;
+  padding: 20px 20px 22px;
   display: grid;
-  gap: 8px;
-  max-width: 320px;
+  gap: 12px;
+  max-width: 420px;
+  width: 100%;
 }
 
 .chat-bubble {
-  font-size: 0.86rem;
-  padding: 8px 12px;
-  border-radius: 16px;
-  max-width: 240px;
+  font-size: 1rem;
+  padding: 12px 16px;
+  border-radius: 18px;
+  max-width: 320px;
+  line-height: 1.45;
 }
 
 .chat-bubble--owner {
