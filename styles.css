@@ -731,12 +731,10 @@ ul {
   align-items: center;
 }
 
-.portrait-card {
-  border-radius: 26px;
-  overflow: hidden;
-  box-shadow: var(--shadow-soft);
-  border: 1px solid rgba(160, 179, 255, 0.5);
-  margin-bottom: 18px;
+.split-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .chat-mockup {
@@ -845,6 +843,31 @@ ul {
   position: absolute;
   inset: auto 18px 18px;
   width: calc(100% - 36px);
+  height: 24px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+
+.before-after-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  border: 2px solid var(--color-primary);
+}
+
+.before-after-slider::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  border: 2px solid var(--color-primary);
 }
 
 .results-counters {
@@ -1131,7 +1154,24 @@ input[type='range'] {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 14px;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-nav-link {
+  font-size: 0.9rem;
+  color: #50536a;
+  transition: color var(--transition-fast);
+}
+
+.footer-nav-link:hover {
+  color: var(--color-primary);
 }
 
 .footer-brand {
@@ -1214,11 +1254,44 @@ input[type='range'] {
   }
 
   .before-after-inner {
-    padding: 20px 16px 30px;
+    padding: 20px 16px 56px;
   }
 
   .before-after-overlay {
-    padding: 20px 16px;
+    padding: 20px 16px 56px;
+  }
+
+  .before-after-side {
+    min-height: auto;
+    padding-bottom: 8px;
+  }
+
+  .before-after-slider {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    width: calc(100% - 24px);
+    height: 44px;
+    padding: 10px 0;
+  }
+
+  .before-after-slider::-webkit-slider-thumb {
+    width: 36px;
+    height: 36px;
+  }
+
+  .before-after-slider::-moz-range-thumb {
+    width: 36px;
+    height: 36px;
+  }
+
+  .before-after-label {
+    font-size: 0.8rem;
+  }
+
+  .before-after-side ul {
+    font-size: 0.9rem;
+    padding-left: 1rem;
   }
 
   .pricing-grid,
@@ -1230,6 +1303,11 @@ input[type='range'] {
   .footer-inner {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .footer-nav {
+    flex-wrap: wrap;
+    gap: 16px;
   }
 }
 
