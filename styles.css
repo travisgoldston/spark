@@ -929,6 +929,7 @@ ul {
 .chat-mockup {
   background: rgba(4, 6, 26, 0.92);
   border-radius: 24px;
+  border: 1px solid rgba(109, 126, 255, 0.4);
   padding: 20px 20px 22px;
   display: grid;
   gap: 12px;
