@@ -13,6 +13,8 @@ RewriteRule ^services/?$ services.html [L]
 RewriteRule ^about/?$ about.html [L]
 RewriteRule ^pricing/?$ pricing.html [L]
 RewriteRule ^faq/?$ faq.html [L]
+RewriteRule ^blog/?$ blog.html [L]
+RewriteRule ^proof/?$ proof.html [L]
 
 # Root: serve index.html for /
 DirectoryIndex index.html

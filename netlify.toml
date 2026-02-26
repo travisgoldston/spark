@@ -28,3 +28,15 @@
   to = "/faq.html"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/blog"
+  to = "/blog.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/proof"
+  to = "/proof.html"
+  status = 200
+  force = true

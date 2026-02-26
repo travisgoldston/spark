@@ -4,6 +4,8 @@
     { "source": "/services", "destination": "/services.html" },
     { "source": "/about", "destination": "/about.html" },
     { "source": "/pricing", "destination": "/pricing.html" },
-    { "source": "/faq", "destination": "/faq.html" }
+    { "source": "/faq", "destination": "/faq.html" },
+    { "source": "/blog", "destination": "/blog.html" },
+    { "source": "/proof", "destination": "/proof.html" }
   ]
 }
