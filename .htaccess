@@ -1,0 +1,18 @@
+# Enable rewrite engine
+RewriteEngine On
+RewriteBase /
+
+# If the request is for an existing file or directory, serve it
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Clean URLs: map path to .html file
+RewriteRule ^how-it-works/?$ how-it-works.html [L]
+RewriteRule ^services/?$ services.html [L]
+RewriteRule ^about/?$ about.html [L]
+RewriteRule ^pricing/?$ pricing.html [L]
+RewriteRule ^faq/?$ faq.html [L]
+
+# Root: serve index.html for /
+DirectoryIndex index.html
