@@ -599,6 +599,31 @@ ul {
   margin-bottom: 10px;
 }
 
+/* Panel text in dark sections (services/pricing pages): light copy, yellow eyebrow */
+.section-dark .panel {
+  color: #d5daf0;
+}
+
+.section-dark .panel h3 {
+  color: #f7f7ff;
+}
+
+.section-dark .panel a {
+  color: var(--color-yellow);
+}
+
+.section-dark .panel a:hover {
+  text-decoration: underline;
+}
+
+.panels-grid--two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* TIMELINE */
 
 .timeline {
@@ -1281,6 +1306,11 @@ input[type='range'] {
 
   .panels-grid {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .panels-grid--two {
+    gap: 32px;
+    max-width: none;
   }
 
   .service-panel-grid {
