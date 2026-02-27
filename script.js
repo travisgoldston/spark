@@ -8,7 +8,7 @@ if (navToggle && navDrawer) {
     navToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
     navDrawer.setAttribute('aria-hidden', !isOpen);
   });
-  navDrawer.querySelectorAll('.nav-drawer-link, .nav-drawer-cta').forEach((link) => {
+  navDrawer.querySelectorAll('.nav-drawer-link, .nav-drawer-sublink, .nav-drawer-cta').forEach((link) => {
     link.addEventListener('click', () => {
       navDrawer.classList.remove('is-open');
       navToggle.setAttribute('aria-expanded', 'false');
