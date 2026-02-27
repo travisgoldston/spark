@@ -18,6 +18,16 @@ if (navToggle && navDrawer) {
   });
 }
 
+// Pretty URL for final CTA section
+if (window.location && window.location.pathname === '/final-cta') {
+  window.addEventListener('load', () => {
+    const target = document.getElementById('final-cta');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+}
+
 // Sticky header
 const headerEl = document.querySelector('[data-header]');
 const heroEl = document.querySelector('#hero');
@@ -121,6 +131,18 @@ if (servicesDropdown) {
     if (e.key === 'Escape') closeDropdown();
   });
 }
+
+// Services dropdown (mobile drawer) - caret click toggles group
+const drawerGroups = document.querySelectorAll('.nav-drawer-group');
+drawerGroups.forEach((group) => {
+  const caret = group.querySelector('.nav-caret');
+  if (!caret) return;
+
+  caret.addEventListener('click', (e) => {
+    e.preventDefault();
+    group.classList.toggle('is-open');
+  });
+});
 
 // Before/after slider
 const overlayEl = document.querySelector('[data-before-after-overlay]');
