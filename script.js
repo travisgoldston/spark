@@ -210,27 +210,36 @@ if (calculatorRoot) {
     const budget = Number(budgetInput && budgetInput.value ? budgetInput.value : 0);
     const activeServices = serviceCheckboxes.filter((c) => c.checked).map((c) => c.value);
 
-    let base = 600;
+    // Keep this estimator conservative and aligned with the public pricing ranges.
+    let base = 420;
 
-    if (needSelect.value === 'fast-leads') base += 200;
-    if (needSelect.value === 'website-refresh') base += 150;
+    if (needSelect.value === 'fast-leads') base += 180;
+    if (needSelect.value === 'website-refresh') base += 140;
 
-    base += (leads - 10) * 8;
-    base += activeServices.length * 120;
+    base += (leads - 10) * 6;
+    base += activeServices.length * 90;
 
     let low = base * 0.85;
     let high = base * 1.2;
 
     if (budget > 0) {
       const cushion = budget * 0.3;
-      low = Math.max(400, budget - cushion);
+      low = Math.max(349, budget - cushion);
       high = budget + cushion;
+    }
+
+    // Public floor (some simple cases can start here).
+    if (low < 349) low = 349;
+
+    if (Math.round(low) === 349) {
+      rangeEl.innerHTML = `Most owners in a similar spot start around <strong>$349+ per month</strong> after setup.`;
+      return;
     }
 
     const lowStr = formatMoney(low);
     const highStr = formatMoney(high);
 
-    rangeEl.innerHTML = `Most owners in a similar spot start around <strong>${lowStr}–${highStr} per month</strong> after setup.`;
+    rangeEl.innerHTML = `Most owners in a similar spot start around <strong>${lowStr} to ${highStr} per month</strong> after setup.`;
   };
 
   needSelect.addEventListener('change', updateEstimate);
