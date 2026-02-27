@@ -6,6 +6,9 @@
     { "source": "/pricing", "destination": "/pricing.html" },
     { "source": "/faq", "destination": "/faq.html" },
     { "source": "/blog", "destination": "/blog.html" },
-    { "source": "/proof", "destination": "/proof.html" }
+    { "source": "/proof", "destination": "/proof.html" },
+    { "source": "/seo", "destination": "/seo.html" },
+    { "source": "/google-ads", "destination": "/google-ads.html" },
+    { "source": "/web-design", "destination": "/web-design.html" }
   ]
 }

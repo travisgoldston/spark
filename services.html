@@ -12,9 +12,18 @@
     <header class="site-header" data-header>
       <div class="container header-inner">
         <a href="/" class="logo">sparkSEO</a>
-        <nav class="nav">
+        <nav class="nav" aria-label="Primary">
           <a href="/how-it-works" class="nav-link">How it works</a>
-          <a href="/services" class="nav-link">Services</a>
+          <div class="nav-item nav-item--dropdown">
+            <a href="/services" class="nav-link nav-link--dropdown">
+              Services <span class="nav-caret" aria-hidden="true">▾</span>
+            </a>
+            <div class="nav-dropdown" aria-label="Services">
+              <a href="/seo" class="nav-dropdown-link">SEO</a>
+              <a href="/google-ads" class="nav-dropdown-link">Google Ads</a>
+              <a href="/web-design" class="nav-dropdown-link">Web design</a>
+            </div>
+          </div>
           <a href="/about" class="nav-link">About us</a>
           <a href="/pricing" class="nav-link">Pricing</a>
           <a href="/proof" class="nav-link">Proof</a>
@@ -31,7 +40,16 @@
       <div class="nav-drawer" id="nav-drawer" aria-hidden="true">
         <nav class="nav-drawer-inner" aria-label="Mobile navigation">
           <a href="/how-it-works" class="nav-drawer-link">How it works</a>
-          <a href="/services" class="nav-drawer-link">Services</a>
+          <div class="nav-drawer-group">
+            <a href="/services" class="nav-drawer-link">
+              Services <span class="nav-caret" aria-hidden="true">▾</span>
+            </a>
+            <div class="nav-drawer-sub" aria-label="Services">
+              <a href="/seo" class="nav-drawer-sublink">SEO</a>
+              <a href="/google-ads" class="nav-drawer-sublink">Google Ads</a>
+              <a href="/web-design" class="nav-drawer-sublink">Web design</a>
+            </div>
+          </div>
           <a href="/about" class="nav-drawer-link">About us</a>
           <a href="/pricing" class="nav-drawer-link">Pricing</a>
           <a href="/proof" class="nav-drawer-link">Proof</a>
@@ -57,7 +75,7 @@
           <p class="section-intro">You don’t need everything at once. We help you choose the right mix. Here’s what each service delivers.</p>
           <div class="service-tabs" data-service-tabs>
             <div class="service-tabs-controls">
-              <button class="service-tab is-active" type="button" data-service="seo">Get found on Google</button>
+              <button class="service-tab is-active" type="button" data-service="seo">SEO</button>
               <button class="service-tab" type="button" data-service="ads">Google Ads</button>
               <button class="service-tab" type="button" data-service="website">Web design</button>
             </div>
@@ -78,6 +96,10 @@
                     </ul>
                   </div>
                 </div>
+                <p class="service-panel-cta">
+                  <a href="/seo" class="btn btn-primary">Learn about SEO</a>
+                  <a href="/#final-cta" class="service-panel-cta-link">Book a Strategy Call</a>
+                </p>
               </article>
               <article class="service-panel" data-service-panel="ads">
                 <h3>Turn search into calls, without wasting budget.</h3>
@@ -95,6 +117,10 @@
                     </ul>
                   </div>
                 </div>
+                <p class="service-panel-cta">
+                  <a href="/google-ads" class="btn btn-primary">Learn about Google Ads</a>
+                  <a href="/#final-cta" class="service-panel-cta-link">Book a Strategy Call</a>
+                </p>
               </article>
               <article class="service-panel" data-service-panel="website">
                 <h3>Web design that turns visitors into calls.</h3>
@@ -111,6 +137,10 @@
                     </ul>
                   </div>
                 </div>
+                <p class="service-panel-cta">
+                  <a href="/web-design" class="btn btn-primary">Learn about Web design</a>
+                  <a href="/#final-cta" class="service-panel-cta-link">Book a Strategy Call</a>
+                </p>
               </article>
             </div>
           </div>
@@ -162,6 +192,9 @@
         <nav class="footer-nav" aria-label="Footer">
           <a href="/how-it-works" class="footer-nav-link">How it works</a>
           <a href="/services" class="footer-nav-link">Services</a>
+          <a href="/seo" class="footer-nav-link">SEO</a>
+          <a href="/google-ads" class="footer-nav-link">Google Ads</a>
+          <a href="/web-design" class="footer-nav-link">Web design</a>
           <a href="/about" class="footer-nav-link">About us</a>
           <a href="/pricing" class="footer-nav-link">Pricing</a>
           <a href="/proof" class="footer-nav-link">Proof</a>

@@ -12,9 +12,18 @@
     <header class="site-header" data-header>
       <div class="container header-inner">
         <a href="/" class="logo">sparkSEO</a>
-        <nav class="nav">
+        <nav class="nav" aria-label="Primary">
           <a href="/how-it-works" class="nav-link">How it works</a>
-          <a href="/services" class="nav-link">Services</a>
+          <div class="nav-item nav-item--dropdown">
+            <a href="/services" class="nav-link nav-link--dropdown">
+              Services <span class="nav-caret" aria-hidden="true">▾</span>
+            </a>
+            <div class="nav-dropdown" aria-label="Services">
+              <a href="/seo" class="nav-dropdown-link">SEO</a>
+              <a href="/google-ads" class="nav-dropdown-link">Google Ads</a>
+              <a href="/web-design" class="nav-dropdown-link">Web design</a>
+            </div>
+          </div>
           <a href="/about" class="nav-link">About us</a>
           <a href="/pricing" class="nav-link">Pricing</a>
           <a href="/proof" class="nav-link">Proof</a>
@@ -31,7 +40,16 @@
       <div class="nav-drawer" id="nav-drawer" aria-hidden="true">
         <nav class="nav-drawer-inner" aria-label="Mobile navigation">
           <a href="/how-it-works" class="nav-drawer-link">How it works</a>
-          <a href="/services" class="nav-drawer-link">Services</a>
+          <div class="nav-drawer-group">
+            <a href="/services" class="nav-drawer-link">
+              Services <span class="nav-caret" aria-hidden="true">▾</span>
+            </a>
+            <div class="nav-drawer-sub" aria-label="Services">
+              <a href="/seo" class="nav-drawer-sublink">SEO</a>
+              <a href="/google-ads" class="nav-drawer-sublink">Google Ads</a>
+              <a href="/web-design" class="nav-drawer-sublink">Web design</a>
+            </div>
+          </div>
           <a href="/about" class="nav-drawer-link">About us</a>
           <a href="/pricing" class="nav-drawer-link">Pricing</a>
           <a href="/proof" class="nav-drawer-link">Proof</a>
@@ -92,7 +110,7 @@
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer">
-                <p>They can, if they’re left alone. Ads work best when someone is watching them, trimming what doesn’t work, and focusing on what does. We’ll start with a budget you’re comfortable with and only increase if it’s clearly bringing real leads. You stay in control of ad spend.</p>
+                <p>They can, if they’re left alone. Ads work best when someone is watching them, trimming what doesn’t work, and focusing on what does. We’ll start with a budget you’re comfortable with and only increase if it’s clearly bringing real leads. You stay in control of ad spend. If you want details, see <a href="/google-ads">Google Ads</a>.</p>
               </div>
             </article>
 
@@ -142,7 +160,7 @@
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer">
-                <p>It depends on your goals, your market, and which services you need (SEO, Google Ads, web design). We don’t publish a single price because every situation is different. We’ll talk through your situation and give you a clear number, no hidden fees. Ad spend is separate and fully in your control. See our <a href="/pricing">Pricing</a> page for the ballpark calculator and our “good fit” guide.</p>
+                <p>It depends on your goals, your market, and which services you need ( <a href="/seo">SEO</a>, <a href="/google-ads">Google Ads</a>, <a href="/web-design">web design</a> ). We don’t publish a single price because every situation is different. We’ll talk through your situation and give you a clear number, no hidden fees. Ad spend is separate and fully in your control. See our <a href="/pricing">Pricing</a> page for the ballpark calculator and our “good fit” guide.</p>
               </div>
             </article>
 
@@ -152,7 +170,7 @@
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer">
-                <p>Yes. Many businesses start with fixing the basics and SEO, then add ads or a web design refresh when it makes sense. We’ll help you choose what fits your budget and goals. You don’t have to do everything at once. Our <a href="/services">Services</a> page breaks down SEO, Google Ads, and web design so you can see what each one does.</p>
+                <p>Yes. Many businesses start with fixing the basics and <a href="/seo">SEO</a>, then add <a href="/google-ads">Google Ads</a> or <a href="/web-design">web design</a> when it makes sense. We’ll help you choose what fits your budget and goals. You don’t have to do everything at once. Our <a href="/services">Services</a> page breaks down SEO, Google Ads, and web design so you can see what each one does.</p>
               </div>
             </article>
 
@@ -184,6 +202,9 @@
         <nav class="footer-nav" aria-label="Footer">
           <a href="/how-it-works" class="footer-nav-link">How it works</a>
           <a href="/services" class="footer-nav-link">Services</a>
+          <a href="/seo" class="footer-nav-link">SEO</a>
+          <a href="/google-ads" class="footer-nav-link">Google Ads</a>
+          <a href="/web-design" class="footer-nav-link">Web design</a>
           <a href="/about" class="footer-nav-link">About us</a>
           <a href="/pricing" class="footer-nav-link">Pricing</a>
           <a href="/proof" class="footer-nav-link">Proof</a>

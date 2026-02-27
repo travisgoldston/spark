@@ -40,3 +40,21 @@
   to = "/proof.html"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/seo"
+  to = "/seo.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/google-ads"
+  to = "/google-ads.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/web-design"
+  to = "/web-design.html"
+  status = 200
+  force = true

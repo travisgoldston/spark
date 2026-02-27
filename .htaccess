@@ -15,6 +15,9 @@ RewriteRule ^pricing/?$ pricing.html [L]
 RewriteRule ^faq/?$ faq.html [L]
 RewriteRule ^blog/?$ blog.html [L]
 RewriteRule ^proof/?$ proof.html [L]
+RewriteRule ^seo/?$ seo.html [L]
+RewriteRule ^google-ads/?$ google-ads.html [L]
+RewriteRule ^web-design/?$ web-design.html [L]
 
 # Root: serve index.html for /
 DirectoryIndex index.html
