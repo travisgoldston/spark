@@ -236,9 +236,14 @@ ul {
 }
 
 .nav-caret {
-  font-size: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
   opacity: 0.9;
   transform: translateY(-1px);
+  padding: 4px 6px;
+  cursor: pointer;
 }
 
 .nav-dropdown {
