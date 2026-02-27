@@ -395,6 +395,27 @@ ul {
   max-width: 520px;
 }
 
+.hero-trust {
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.95rem;
+  color: #c9cdf7;
+}
+
+.hero-trust li {
+  margin-top: 8px;
+  padding-left: 1.25em;
+  position: relative;
+}
+
+.hero-trust li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--color-yellow);
+}
+
 .hero-actions {
   margin-top: 24px;
 }
@@ -403,6 +424,19 @@ ul {
   margin-top: 12px;
   font-size: 0.94rem;
   color: #c9cdf7;
+}
+
+.hero-secondary-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: #9ea3d7;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.hero-secondary-link:hover {
+  color: var(--color-yellow);
 }
 
 .hero-secondary {
