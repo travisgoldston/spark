@@ -48,13 +48,13 @@
   force = true
 
 [[redirects]]
-  from = "/google-ads"
-  to = "/google-ads.html"
+  from = "/web-design"
+  to = "/web-design.html"
   status = 200
   force = true
 
 [[redirects]]
-  from = "/web-design"
-  to = "/web-design.html"
+  from = "/conversion-optimization"
+  to = "/conversion-optimization.html"
   status = 200
   force = true

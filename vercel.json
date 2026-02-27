@@ -8,7 +8,7 @@
     { "source": "/blog", "destination": "/blog.html" },
     { "source": "/proof", "destination": "/proof.html" },
     { "source": "/seo", "destination": "/seo.html" },
-    { "source": "/google-ads", "destination": "/google-ads.html" },
-    { "source": "/web-design", "destination": "/web-design.html" }
+    { "source": "/web-design", "destination": "/web-design.html" },
+    { "source": "/conversion-optimization", "destination": "/conversion-optimization.html" }
   ]
 }
