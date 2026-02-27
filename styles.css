@@ -375,8 +375,12 @@ ul {
 .nav-drawer-sub {
   margin-top: 10px;
   padding-left: 14px;
-  display: grid;
+  display: none;
   gap: 8px;
+}
+
+.nav-drawer-group.is-open .nav-drawer-sub {
+  display: grid;
 }
 
 .nav-drawer-sublink {

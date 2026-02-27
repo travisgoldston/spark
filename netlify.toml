@@ -58,3 +58,9 @@
   to = "/conversion-optimization.html"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/final-cta"
+  to = "/index.html"
+  status = 200
+  force = true

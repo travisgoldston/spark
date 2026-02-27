@@ -19,5 +19,8 @@ RewriteRule ^seo/?$ seo.html [L]
 RewriteRule ^web-design/?$ web-design.html [L]
 RewriteRule ^conversion-optimization/?$ conversion-optimization.html [L]
 
+# Final CTA pretty URL
+RewriteRule ^final-cta/?$ index.html [L]
+
 # Root: serve index.html for /
 DirectoryIndex index.html

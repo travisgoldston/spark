@@ -9,6 +9,7 @@
     { "source": "/proof", "destination": "/proof.html" },
     { "source": "/seo", "destination": "/seo.html" },
     { "source": "/web-design", "destination": "/web-design.html" },
-    { "source": "/conversion-optimization", "destination": "/conversion-optimization.html" }
+    { "source": "/conversion-optimization", "destination": "/conversion-optimization.html" },
+    { "source": "/final-cta", "destination": "/index.html" }
   ]
 }
