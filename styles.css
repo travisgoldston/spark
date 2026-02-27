@@ -715,6 +715,10 @@ ul {
   gap: 20px;
 }
 
+.panels-grid + .section-summary {
+  margin-top: 28px;
+}
+
 .panel {
   background: rgba(7, 10, 40, 0.96);
   border-radius: 18px;
@@ -790,7 +794,7 @@ ul {
 .process-list {
   list-style: decimal;
   padding-left: 1.5em;
-  margin: 24px 0 0;
+  margin: 24px 0 20px;
   max-width: 560px;
 }
 
@@ -1076,7 +1080,7 @@ ul {
 
 .timeline {
   list-style: none;
-  margin: 34px 0 0;
+  margin: 34px 0 28px;
   padding: 0;
   border-left: 2px solid #e0e3f3;
   position: relative;
@@ -1154,6 +1158,10 @@ ul {
 }
 
 /* SERVICES */
+
+.service-tabs + .section-summary {
+  margin-top: 28px;
+}
 
 .service-tabs-controls {
   display: inline-flex;
@@ -1292,7 +1300,7 @@ ul {
 
 .icon-list {
   list-style: none;
-  margin: 20px 0 0;
+  margin: 20px 0 20px;
   padding: 0;
   display: grid;
   gap: 10px;
