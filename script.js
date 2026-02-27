@@ -97,6 +97,31 @@ if (serviceTabsRoot) {
   });
 }
 
+// Services dropdown (desktop)
+const servicesDropdown = document.querySelector('.nav-item--dropdown');
+if (servicesDropdown) {
+  const trigger = servicesDropdown.querySelector('.nav-link--dropdown');
+  const closeDropdown = () => servicesDropdown.classList.remove('is-open');
+
+  if (trigger) {
+    trigger.addEventListener('click', (e) => {
+      const isOpen = servicesDropdown.classList.contains('is-open');
+      if (!isOpen) {
+        e.preventDefault();
+        servicesDropdown.classList.add('is-open');
+      }
+    });
+  }
+
+  document.addEventListener('click', (e) => {
+    if (!servicesDropdown.contains(e.target)) closeDropdown();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeDropdown();
+  });
+}
+
 // Before/after slider
 const overlayEl = document.querySelector('[data-before-after-overlay]');
 const sliderEl = document.querySelector('[data-before-after-slider]');
