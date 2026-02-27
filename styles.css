@@ -718,6 +718,16 @@ ul {
   text-decoration: underline;
 }
 
+.section-dark .panel .btn-primary,
+.section-dark .pricing-tier-card .btn-primary {
+  color: #ffffff;
+}
+
+.section-dark .panel .btn-primary:hover,
+.section-dark .pricing-tier-card .btn-primary:hover {
+  color: #ffffff;
+}
+
 .section-dark .panel ul {
   margin-bottom: 0;
 }
