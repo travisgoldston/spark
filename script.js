@@ -140,6 +140,7 @@ drawerGroups.forEach((group) => {
 
   caret.addEventListener('click', (e) => {
     e.preventDefault();
+    e.stopPropagation();
     group.classList.toggle('is-open');
   });
 });
