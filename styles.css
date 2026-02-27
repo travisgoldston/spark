@@ -193,6 +193,7 @@ ul {
   display: flex;
   gap: 24px;
   align-items: center;
+  margin-left: auto;
 }
 
 .nav-link {
@@ -1804,16 +1805,13 @@ input[type='range'] {
     display: none;
   }
 
-  .header-cta-text--long {
+  .header-cta {
     display: none;
-  }
-
-  .header-cta-text--short {
-    display: inline;
   }
 
   .nav-toggle {
     display: flex;
+    margin-left: auto;
   }
 
   .nav-drawer {
