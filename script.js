@@ -145,19 +145,19 @@ drawerGroups.forEach((group) => {
   });
 });
 
-// Before/after slider
-const overlayEl = document.querySelector('[data-before-after-overlay]');
-const sliderEl = document.querySelector('[data-before-after-slider]');
+// Before/after toggle (click to switch)
+const beforeAfterInner = document.querySelector('.before-after-inner');
+const beforeAfterToggle = document.querySelector('[data-before-after-toggle]');
+const beforeAfterToggleText = document.querySelector('.before-after-toggle-text');
 
-if (overlayEl && sliderEl) {
-  const updateOverlay = () => {
-    const value = Number(sliderEl.value);
-    const rightInset = `${100 - value}%`;
-    overlayEl.style.clipPath = `inset(0 ${rightInset} 0 0 round 26px)`;
-  };
-
-  updateOverlay();
-  sliderEl.addEventListener('input', updateOverlay);
+if (beforeAfterInner && beforeAfterToggle) {
+  beforeAfterToggle.addEventListener('click', () => {
+    const isAfter = beforeAfterInner.classList.toggle('is-after');
+    beforeAfterToggle.setAttribute('aria-label', isAfter ? 'Show Before' : 'Show After');
+    if (beforeAfterToggleText) {
+      beforeAfterToggleText.textContent = isAfter ? 'View Before' : 'View After';
+    }
+  });
 }
 
 // Animated counters
