@@ -1490,45 +1490,40 @@ ul {
 .before-after-overlay {
   position: absolute;
   top: 0;
-  left: 40%;
+  left: 0;
   bottom: 0;
-  width: 60%;
+  width: 100%;
   background: radial-gradient(circle at top left, #51a3ff, #c1e1ff);
   padding: 26px;
-  border-radius: 26px 0 0 26px;
-  clip-path: inset(0 0 0 0 round 26px);
+  border-radius: 26px;
+  clip-path: inset(0 100% 0 0 round 26px);
   transition: clip-path var(--transition-med);
 }
 
-.before-after-slider {
+.before-after-inner.is-after .before-after-overlay {
+  clip-path: inset(0 0 0 0 round 26px);
+}
+
+.before-after-toggle {
   position: absolute;
-  inset: auto 18px 18px;
-  width: calc(100% - 36px);
-  height: 24px;
-  -webkit-appearance: none;
-  appearance: none;
-  background: transparent;
+  bottom: 18px;
+  left: 18px;
+  z-index: 10;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  background: rgba(10, 10, 35, 0.85);
+  color: #e3e6ff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
 }
 
-.before-after-slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 28px;
-  height: 28px;
-  border-radius: 999px;
-  background: #ffffff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
-  cursor: pointer;
-  border: 2px solid var(--color-primary);
-}
-
-.before-after-slider::-moz-range-thumb {
-  width: 28px;
-  height: 28px;
-  border-radius: 999px;
-  background: #ffffff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
-  cursor: pointer;
-  border: 2px solid var(--color-primary);
+.before-after-toggle:hover {
+  background: rgba(10, 10, 35, 0.95);
+  border-color: rgba(255, 255, 255, 0.6);
+  color: #fff;
 }
 
 .results-counters {
@@ -2173,23 +2168,11 @@ input[type='range'] {
     padding-bottom: 8px;
   }
 
-  .before-after-slider {
-    left: 12px;
-    right: 12px;
-    bottom: 12px;
-    width: calc(100% - 24px);
-    height: 44px;
-    padding: 10px 0;
-  }
-
-  .before-after-slider::-webkit-slider-thumb {
-    width: 36px;
-    height: 36px;
-  }
-
-  .before-after-slider::-moz-range-thumb {
-    width: 36px;
-    height: 36px;
+  .before-after-toggle {
+    bottom: 14px;
+    left: 14px;
+    padding: 12px 20px;
+    font-size: 0.88rem;
   }
 
   .before-after-label {
