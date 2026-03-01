@@ -1967,6 +1967,22 @@ input[type='range'] {
   border-top: 1px solid rgba(213, 217, 242, 0.6);
 }
 
+.footer-credit {
+  font-size: 0.82rem;
+  color: #9a9eb5;
+  margin: 8px 0 0;
+}
+
+.footer-credit a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer-credit a:hover {
+  color: var(--color-text-main);
+}
+
 /* Proof / case studies */
 .proof-grid {
   display: grid;
