@@ -172,12 +172,41 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 32px;
+  gap: 20px;
   padding: 18px 20px;
+  flex-wrap: wrap;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
 }
 
 .logo {
   color: #e3e6ff;
+  font-weight: 600;
+}
+
+.header-social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e3e6ff;
+  opacity: 0.8;
+  transition: opacity var(--transition-fast), color var(--transition-fast);
+}
+
+.header-social a:hover {
+  opacity: 1;
+  color: var(--color-yellow);
 }
 
 .site-header.scrolled .header-inner {
@@ -192,9 +221,11 @@ ul {
 
 .nav {
   display: flex;
-  gap: 24px;
+  gap: 20px;
   align-items: center;
   margin-left: auto;
+  flex-wrap: wrap;
+  min-width: 0;
 }
 
 .nav-link {
