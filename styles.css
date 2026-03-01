@@ -185,8 +185,9 @@ ul {
 }
 
 .logo img {
-  height: 30px;
-  filter: brightness(1.9) saturate(1.1);
+  height: 32px;
+  width: auto;
+  display: block;
 }
 
 .nav {
