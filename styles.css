@@ -291,6 +291,24 @@ ul {
   outline: none;
 }
 
+.header-social {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.header-social a {
+  font-size: 0.8rem;
+  color: #e3e6ff;
+  opacity: 0.85;
+  transition: opacity var(--transition-fast), color var(--transition-fast);
+}
+
+.header-social a:hover {
+  opacity: 1;
+  color: var(--color-yellow);
+}
+
 .header-cta {
   font-size: 0.88rem;
   padding-inline: 18px;
@@ -1982,6 +2000,14 @@ input[type='range'] {
 
   .nav {
     display: none;
+  }
+
+  .header-social {
+    gap: 10px;
+  }
+
+  .header-social a {
+    font-size: 0.75rem;
   }
 
   .header-cta {
