@@ -184,7 +184,7 @@ ul {
   flex-shrink: 0;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 3px;
 }
 
 .site-header.scrolled .header-inner {
@@ -841,6 +841,8 @@ ul {
   padding: 18px 18px 20px;
   border: 1px solid rgba(109, 126, 255, 0.4);
   transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+  /* Panels always use a dark background — keep copy light on light AND dark page sections */
+  color: #d5daf0;
 }
 
 .panel:hover {
@@ -853,6 +855,21 @@ ul {
   font-size: 1.02rem;
   margin-top: 0;
   margin-bottom: 10px;
+  color: #f7f7ff;
+}
+
+.panel p,
+.panel li {
+  color: #d5daf0;
+}
+
+.panel strong {
+  color: #f0f2ff;
+}
+
+/* Pricing tier cards are `.panel` too — keep tagline yellow (beats `.panel p` specificity) */
+.panel.pricing-tier-card .pricing-tier-tagline {
+  color: var(--color-yellow);
 }
 
 /* Panel text in dark sections (services/pricing pages): light copy, yellow eyebrow */
@@ -1888,7 +1905,7 @@ input[type='range'] {
 .footer-brand-link {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 3px;
   margin: 0 0 12px;
 }
 
