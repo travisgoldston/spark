@@ -52,6 +52,12 @@ a {
   text-decoration: none;
 }
 
+/* Internal page links in content: underline (header/footer sit outside <main>; buttons use .btn) */
+main a[href^="/"]:not([class*="btn"]):not(.logo):not(.footer-brand-link) {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .container {
   width: 100%;
   max-width: var(--container-width);
