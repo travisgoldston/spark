@@ -184,7 +184,7 @@ ul {
   flex-shrink: 0;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
 }
 
 .site-header.scrolled .header-inner {
@@ -1888,7 +1888,7 @@ input[type='range'] {
 .footer-brand-link {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
   margin: 0 0 12px;
 }
 
