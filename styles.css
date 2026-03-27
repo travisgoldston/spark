@@ -1479,6 +1479,39 @@ ul {
   color: #2f3d66;
 }
 
+/* About page: name story (dark panel) + quick facts (light card), aligned with proof / services panels */
+.about-panel {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-panel .eyebrow {
+  color: var(--color-yellow);
+}
+
+.about-panel h3 {
+  font-size: 1.35rem;
+  line-height: 1.2;
+  margin-top: 0.35rem;
+  margin-bottom: 12px;
+}
+
+.about-facts-card {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-facts-card .icon-list {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.about-facts-card h2 {
+  margin-top: 0;
+}
+
 /* RESULTS */
 
 .before-after {
