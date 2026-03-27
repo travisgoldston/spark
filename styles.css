@@ -1474,6 +1474,11 @@ ul {
   color: #9ba1f5;
 }
 
+/* About page: answer text on light background reads darker than default icon-list accent */
+.icon-list--about span {
+  color: #2f3d66;
+}
+
 /* RESULTS */
 
 .before-after {
