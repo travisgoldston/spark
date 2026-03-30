@@ -52,6 +52,12 @@ a {
   text-decoration: none;
 }
 
+/* Internal page links in content: underline (header/footer sit outside <main>; buttons use .btn) */
+main a[href^="/"]:not([class*="btn"]):not(.logo):not(.footer-brand-link) {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .container {
   width: 100%;
   max-width: var(--container-width);
@@ -195,15 +201,18 @@ ul {
   color: #e3e6ff;
   font-weight: 600;
   flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
 }
 
 .site-header.scrolled .header-inner {
   padding-block: 10px;
 }
 
-.logo img {
-  height: 32px;
-  width: auto;
+.logo-mark {
+  width: 26px;
+  height: 26px;
   display: block;
 }
 
@@ -851,6 +860,8 @@ ul {
   padding: 18px 18px 20px;
   border: 1px solid rgba(109, 126, 255, 0.4);
   transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+  /* Panels always use a dark background — keep copy light on light AND dark page sections */
+  color: #d5daf0;
 }
 
 .panel:hover {
@@ -863,6 +874,21 @@ ul {
   font-size: 1.02rem;
   margin-top: 0;
   margin-bottom: 10px;
+  color: #f7f7ff;
+}
+
+.panel p,
+.panel li {
+  color: #d5daf0;
+}
+
+.panel strong {
+  color: #f0f2ff;
+}
+
+/* Pricing tier cards are `.panel` too — keep tagline yellow (beats `.panel p` specificity) */
+.panel.pricing-tier-card .pricing-tier-tagline {
+  color: var(--color-yellow);
 }
 
 /* Panel text in dark sections (services/pricing pages): light copy, yellow eyebrow */
@@ -1461,6 +1487,44 @@ ul {
   color: #9ba1f5;
 }
 
+/* About page: answer text on light background reads darker than default icon-list accent */
+.icon-list--about span {
+  color: #2f3d66;
+}
+
+/* About page: name story (dark panel) + quick facts (light card), aligned with proof / services panels */
+.about-panel {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-panel .eyebrow {
+  color: var(--color-yellow);
+}
+
+.about-panel h3 {
+  font-size: 1.35rem;
+  line-height: 1.2;
+  margin-top: 0.35rem;
+  margin-bottom: 12px;
+}
+
+.about-facts-card {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-facts-card .icon-list {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.about-facts-card h2 {
+  margin-top: 0;
+}
+
 /* RESULTS */
 
 .before-after {
@@ -1893,6 +1957,23 @@ input[type='range'] {
   color: var(--color-primary);
   margin: 0 0 12px;
   letter-spacing: -0.02em;
+}
+
+.footer-brand-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  margin: 0 0 12px;
+}
+
+.footer-brand-link .footer-brand {
+  margin: 0;
+}
+
+.footer-mark {
+  width: 28px;
+  height: 28px;
+  display: block;
 }
 
 .footer-copy {
